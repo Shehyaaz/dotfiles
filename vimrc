@@ -59,5 +59,3 @@ nnoremap <silent> <C-p> :Files<CR>
 nnoremap <silent> <leader>. :Files <C-r>=expand("%:h")<CR>/<CR>
 "This unsets the "last search pattern" register by hitting Ctrl-C
 noremap <silent> <C-c> :let @/ = ""<CR>
-" Vim Fugitive mappings
-nnoremap <leader>gc :GCheckout<CR>
