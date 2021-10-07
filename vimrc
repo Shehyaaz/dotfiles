@@ -23,6 +23,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-airline/vim-airline'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
+  Plug 'tpope/vim-fugitive'
+  Plug 'stsewd/fzf-checkout.vim'
   Plug 'jiangmiao/auto-pairs'
   Plug 'preservim/nerdcommenter'
   Plug 'jremmen/vim-ripgrep'
@@ -57,3 +59,5 @@ nnoremap <silent> <C-p> :Files<CR>
 nnoremap <silent> <leader>. :Files <C-r>=expand("%:h")<CR>/<CR>
 "This unsets the "last search pattern" register by hitting Ctrl-C
 noremap <silent> <C-c> :let @/ = ""<CR>
+" Vim Fugitive mappings
+nnoremap <leader>gc :GCheckout<CR>
